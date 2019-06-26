@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "module": "commonjs",
+        "outDir": "./lib",
+        "sourceMap": true,
+        "target": "es5",
+        "resolveJsonModule": true
+    },
+    "types": [
+        "node",
+        "web3"
+    ],
+    "include": [
+        "interacts/*.ts",
+        "app/*.ts"
+    ]
+}

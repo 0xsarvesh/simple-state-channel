@@ -1,0 +1,35 @@
+{
+  "name": "state-channels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "compile-all": "truffle compile --all",
+    "test": "truffle test",
+    "ganache": "sh tools/runGanacheCli.sh",
+    "generate:interacts": "ts-generator ts-generator.json",
+    "postinstall": "npm run compile-all && npm run generate:interacts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "openzeppelin-solidity": "2.3.0",
+    "truffle": "5.0.22",
+    "ts-generator": "0.0.8",
+    "typechain": "0.3.14",
+    "@types/node": "11.11.3",
+    "@types/web3": "1.0.18"
+  },
+  "dependencies": {
+    "web3": "1.0.0-beta.52",
+    "web3-eth-contract": "latest",
+    "web3-core": "latest",
+    "web3-eth": "latest",
+    "ts-node": "8.0.3",
+    "typescript": "3.3.3333"
+  }
+}
