@@ -2,7 +2,7 @@
 This code represents a simple payment channel. This is not a production ready code.
 
 
-### Contract : StateChannel.sol
+## Contract : StateChannel.sol
 
 This contract enables two parties to open a state channel, performs multiple off chain transactions and settle them on chain. Settlement is delayed by 1000 blocks in order to let second party open a dispute. If second party is successfully able to prove a fraud of first party by presenting valid signature then bad actor is punished. 
 
@@ -15,7 +15,7 @@ This contract enables two parties to open a state channel, performs multiple off
 4. **`openDispute`**: This function let any one open a dispute on an ongoing settlement. The recipient's and sender's signature are required. Bad actor will be punished for initiating wrong settlement. Wrong settlement here means any valid transaction with lower nonce which reflects higher balance for any party. 
 
 
-###TypeScript: Transaction.ts
+## TypeScript: Transaction.ts
 
 Transaction class can be used to sign and verify transactions. 
 
